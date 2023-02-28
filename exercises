@@ -1,3 +1,5 @@
+--POBIERANIE DANYCH
+
 --Pokaż wszystkich pracowników
 select *
 from Pracownicy;
@@ -99,6 +101,8 @@ order by Nazwa;
 select TOP 3*
 from Produkty
 order by cena DESC;
+
+--FILTROWANIE I SORTOWANIE
 
 --Pokaż pracowników zatrudnionych w latach 2010-2015
 select *
