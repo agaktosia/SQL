@@ -3,4 +3,4 @@ W załaczonych plikach znajdują się zadania, które rozwiązywałam w celu prz
 
 Zadania pogrupowane są w działy.
 
-Dodatkowo w repozytorium znajduje się plik - ŚCIĄGA, w którym zawarłam definicje, krótkie opisy i przykłady z nauki SQL.
+Dodatkowo w repozytorium znajduje się plik - SCIAGA, w którym zawarłam definicje, krótkie opisy i przykłady z nauki SQL.
