@@ -1,0 +1,32 @@
+FUNKCJE TESTOWE
+
+CONCAT - scala/skleja tekst (jeśli coś nie jest napisem, zamienia na napis)
+         np. SELECT CONCAT(Imie, ' ', Nazwisko)
+
+RIGHT I LEFT
+ 
+    np. WHERE RIGHT(Imie, 1) = 'a' - dzięki temu zapisowi wyciągniemy - imiona kobiet kończące się na "a" 
+                                     (w Polsce, imiona kobiet kończą się na "a").
+
+     W powyższym przykładzie 1 wskazuje - ile znaków chcemy wyciągnąć, RIGHT - wskazuje, z której strony.
+ 
+    np. WHERE LEFT(Imie, 1) = 'K' - dzięki temu zapytaniu wyciągniemy - wszystkie imiona rozpoczynające się na "K".
+ 
+     W powyższym przykładzie 1 wskazuje - ile znaków chcemy wyciągnąć, LEFT - wskazuje, z której strony.
+    
+ 
+SUBSTRING (może mieć różne skróty - MID, SUB, SUBR)
+ 
+    Wyciąga nam znaki ze środka tekstu.
+ 
+    np. SUBSTRING(PESEL, 5, 2) 
+     Pierwsza wartość w nawiasie wskazuje, z której kolumny tabeli chcemy coś wyciągnąć; 
+     5 wskazuje, od którego znaku chcemy zacząć, a 2 wskazuje ile znaków chcemy wyciągnąć.
+  
+LEN
+  
+    Służy do liczenia znaków w teksie.
+  
+     np. WHERE LEN(PESEL) <> 11 - Zapytanie pomoże wskazać na błędy w kolumnie PESEL, gdyż zwróci nam PEELE, 
+                               których ilość znaków jest różna od 11 (PESEL w Polsce ma 11 znaków).
+                               
