@@ -40,7 +40,7 @@ SELECT SUBSTRING(PESEL, 5, 2)
 Pierwsza wartość w nawiasie wskazuje, z której kolumny tabeli chcemy coś wyciągnąć; 
 5 wskazuje, od którego znaku chcemy zacząć, a 2 wskazuje ile znaków chcemy wyciągnąć.
   
-### LEN
+## LEN
   
 Służy do liczenia znaków w teksie.
   
@@ -51,3 +51,32 @@ WHERE LEN(PESEL) <> 11
 Zapytanie pomoże wskazać błędy w kolumnie PESEL, gdyż zwróci nam PEELE, 
 których ilość znaków jest różna od 11 (PESEL w Polsce ma 11 znaków).
                                
+## REPLACE
+
+Służy do zamieniania tekstu na inny.
+
+```sql
+SELECT NAZWA, REPLACE(mIASTO,'Wroclaw','Wrocław') as Miasto
+```
+
+## UPPER
+
+Zamienia tekst na wielkie litery.
+
+## LOWER
+
+Zamienia tekst na małe litery.
+
+##  LTRIM i RTRIM
+
+Służy od "odśmiecania" danych np. białych znaków.
+
+```sql
+SELECT LTRIM (RTRIM('   jakiś napis   '))
+
+Kolejność jak w matematyce najpierw nawias, potem reszta.
+
+LTRIM - lewa strona.
+
+RTRIM - prawa strona.
+
