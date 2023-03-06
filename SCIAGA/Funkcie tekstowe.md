@@ -73,6 +73,7 @@ Służy od "odśmiecania" danych np. białych znaków.
 
 ```sql
 SELECT LTRIM (RTRIM('   jakiś napis   '))
+```
 
 Kolejność jak w matematyce najpierw nawias, potem reszta.
 
