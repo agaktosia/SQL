@@ -4,4 +4,4 @@
 
 [funkcje matematyczne](Funkcje%20matematyczne.md)
 
-[operacje na zbiorach](Inne%20elementy%20zapyta%C5%84.md)
+[Inne elementy zapytań](Inne%20elementy%20zapyta%C5%84.md)
