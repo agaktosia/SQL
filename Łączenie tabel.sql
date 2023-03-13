@@ -67,3 +67,35 @@ ON d.IdDzialy = p.IdDzialu
 INNER JOIN Zwroty z 
 ON z.IdPracownik = p.IdPracownicy
 
+--Pokaż jaką mamy biżuterię
+SELECT p.Nazwa
+FROM Produkty p 
+INNER JOIN KategorieProduktow kp
+ON p.IdKategorii = kp.IdKategorieProduktow
+WHERE kp.Nazwa = 'Biżuteria';
+
+--Pokaż klientów nie posiadających karty stałego klienta
+SELECT *
+from Klienci k
+LEFT JOIN KartaStalegoKlienta ks
+ON k.Idklienci = ks.Idklienta
+where ks.IdKartaStalegoKlienta is null;
+
+--Jakie ceny mieliśmy w marcu dla telefonów? 
+SELECT *
+FROM Produkty p
+INNER JOIN CenyProduktow cp
+ON p.IdProdukty = cp.IdProduktu
+INNER JOIN KategorieProduktow kp
+ON kp.IdKategorieProduktow = p.IdKategorii
+WHERE MONTH(cp.DataOd) <= 3 AND MONTH(cp.DataDo) >= 3
+AND kp.Nazwa = 'Telefony';
+
+--Pokaż nazwy produktów kupionych w sklepie online w styczniu
+SELECT Distinct p.Nazwa 
+from Produkty p 
+INNER JOIN ZakupySklepOnlineProdukt zp
+ON p.IdProdukty= zp.IdProduktu
+INNER JOIN ZakupySklepOnline z 
+ON zp.IdZakup=z.IdZakupySklepOnline 
+WHERE MONTH(z.DataZakupu) = 1;
