@@ -1,8 +1,10 @@
 # OPERACJE NA ZBIORACH
 
-## UNION - łączy dwa zapytania, zwraca unikalne dane
+## UNION 
+łączy dwa zapytania, zwraca unikalne dane
 
-## UNION ALL - zwraca wszystkie dane
+## UNION ALL 
+zwraca wszystkie dane
 
 ```sql
 SELECT *
@@ -31,9 +33,11 @@ WHERE Imie ='Anna'
 ORDER BY Nazwisko
 ```
 
-## INTERSECT - wyciaga część wspólną, wiersze ktore powtarzają sie w zapytaniach połączonych
+## INTERSECT 
+wyciaga część wspólną, wiersze ktore powtarzają sie w zapytaniach połączonych
 
-## EXCEPT - zwraca różnice zbiorów
+## EXCEPT 
+zwraca różnice zbiorów
 
 ```SQL
 SELECT *
@@ -61,4 +65,17 @@ SELECT *
 FROM Pracownicy
 WHERE Imie ='Anna'
 ORDER BY Nazwisko
+```
+## CASE - zwraca warunkowe wartości w kolumnie 
+(jeśli warunek jest prawdziwy pojawi się jedna wartość, 
+jeśli inny warunek jest prawdziwy pojawi się druga wartość,
+w przeciwnym wypadku pojawi się trzecia wartość)
+
+```sql
+SELECT Nazwa,
+     CASE WHEN cena < 50 THEN 'Tani'
+          WHEN cena < 200 THEN 'Drogi'
+          ELSE 'Bardzo drogi'
+     END AS czyDrogi
+FROM Produkty
 ```
