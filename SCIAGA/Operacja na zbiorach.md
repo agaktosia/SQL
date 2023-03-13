@@ -1,8 +1,8 @@
-#OPERACJE NA ZBIORACH
+# OPERACJE NA ZBIORACH
 
-##UNION - łączy dwa zapytania, zwraca unikalne dane
+## UNION - łączy dwa zapytania, zwraca unikalne dane
 
-##UNION ALL - zwraca wszystkie dane
+## UNION ALL - zwraca wszystkie dane
 
 ```sql
 SELECT *
@@ -31,9 +31,9 @@ WHERE Imie ='Anna'
 ORDER BY Nazwisko
 ```
 
-##INTERSECT - wyciaga część wspólną, wiersze ktore powtarzają sie w zapytaniach połączonych
+## INTERSECT - wyciaga część wspólną, wiersze ktore powtarzają sie w zapytaniach połączonych
 
-##EXCEPT - zwraca różnice zbiorów
+## EXCEPT - zwraca różnice zbiorów
 
 ```SQL
 SELECT *
