@@ -22,6 +22,8 @@ UPDATE Produkty
 SET Cena = (SELECT AVG(Cena) FROM Produkty WHERE Nazwa LIKE '%iPhone%')
 WHERE Nazwa = 'Apple iPhone X';
 
+--Usuwanie danych
+
 --Usuń całe zamówienie online nr 255
 DELETE FROM ZakupySklepOnlineProdukt
 WHERE IdZakup = 255
