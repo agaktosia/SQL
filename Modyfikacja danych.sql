@@ -1,4 +1,4 @@
--- MODTFIKACJA DANYCH
+-- MODYFIKACJA DANYCH
 
 -- Wstawianie danych
 
